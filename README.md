@@ -15,4 +15,7 @@ The game ends when the score is calculated as 0, or no combination of open tiles
 
 Written in JS with minimal styling
 ![JS implementation](shut_the_box_JS.png)
+
 Just double-click on index.html in /path/to/the/repository/written_in_js/index.html or serve it with your favorite web server.
+
+If you prefer, docker compose is available: run `docker compose up -d`
