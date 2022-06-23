@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shut The Box</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <p>Click the buttons and tiles or Enter to roll, keypad numbers 1-9, or Spacebar to start new game.</p>
+                <button class="btn btn-primary reset-game" title="shortkey: spacebar">New Game</button>
+            </div>
+            <div class="player 1" data-player="1">
+                <div>
+                    <div>Player 1 </div>
+                    <div>Score:<span class="score 1"></span></div>
+                    <div class="messages-container">
+                        <div class="banner"></div>
+                        <div class="messages"></div>
+                    </div>
+                </div>
+
+                <div class="tile-parent">
+                    <div class="tile 1 toggle-tile" data-tile_number="1">1</div>
+                </div>
+                <div class="tile-parent">
+                    <div class="tile 2 toggle-tile" data-tile_number="2">2</div>
+                </div>
+                <div class="tile-parent">
+                    <div class="tile 3 toggle-tile" data-tile_number="3">3</div>
+                </div>
+                <div class="tile-parent">
+                    <div class="tile 4 toggle-tile" data-tile_number="4">4</div>
+                </div>
+                <div class="tile-parent">
+                    <div class="tile 5 toggle-tile" data-tile_number="5">5</div>
+                </div>
+                <div class="tile-parent">
+                    <div class="tile 6 toggle-tile" data-tile_number="6">6</div>
+                </div>
+                <div class="tile-parent">
+                    <div class="tile 7 toggle-tile" data-tile_number="7">7</div>
+                </div>
+                <div class="tile-parent">
+                    <div class="tile 8 toggle-tile" data-tile_number="8">8</div>
+                </div>
+                <div class="tile-parent">
+                    <div class="tile 9 toggle-tile" data-tile_number="9">9</div>
+                </div>
+            </div><!--end player-->
+            <div class=""row">
+                <div class="col-12">
+                    <button class="roll btn btn-success btn-lg btn-block" data-player="1" title="shortkey: enter key">Roll</button>
+                </div>
+            </div>
+            <div>
+                <div class="dice-parent">
+                    <div class="dice 1"></div>
+                    <div class="dice 2"></div>
+                </div>
+            </div>
+
+        </div><!--end container-->
+        <script src="jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
