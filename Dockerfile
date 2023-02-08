@@ -1,5 +1,5 @@
-FROM nginx:1.21
+FROM nginx:latest
 
-COPY ./written_in_js/ /usr/share/nginx/html/
+COPY ./src/ /usr/share/nginx/html/
 
 CMD ["nginx", "-g", "daemon off;"]
