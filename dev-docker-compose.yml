@@ -1,0 +1,14 @@
+---
+services:
+  shut-the-box:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: shut-the-box:v1
+    ports:
+      - "8080:80"
+    container_name: game-on
+    restart: always
+    volumes:
+      - ./src/:/usr/share/nginx/html/:ro
+

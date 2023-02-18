@@ -55,8 +55,10 @@ function rollDice()
     var currentPlayerScore = $(".score." + currentPlayer).text();
     if(currentPlayerScore == "0")
     {
-        displayBanners("CONGRATULATIONS! Player " + currentPlayer + ", You Just Shut The Box!", "banner");
-        $(".player." + currentPlayer + " button.roll").prop('disabled',true);
+        displayBanners("CONGRATS! You Just Shut The Box!", "banner");
+        // $(".player." + currentPlayer + " button.roll").prop('disabled',true);
+        $("button.roll").prop('disabled',true);
+        $("div.tile").removeClass("toggle-tile");
         return true;
     }
 
@@ -80,6 +82,8 @@ function rollDice()
             displayBanners("You are out of moves. Game Over.");
         }
         displayNoMoreMoves();
+        $("button.roll").prop('disabled',true);
+        $("div.tile").removeClass("toggle-tile");
     }
 }
 
