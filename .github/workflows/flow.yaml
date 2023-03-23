@@ -1,0 +1,13 @@
+on:
+ workflow_dispatch:
+ push:
+ 
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      run: |
+        echo "hello"
+      shell: bash
